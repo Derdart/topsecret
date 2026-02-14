@@ -1,10 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const passcodeInput = document.getElementById("passcode-input");
   const messageArea = document.getElementById("message-area");
-  const ADMIN_PASSCODE = "148842";
-  const GUEST_PASSCODE = "696742";
 
-  // --- Authentication Logic ---
   if (passcodeInput) {
     // Check if we need to run boot sequence
     const bootSequence = document.getElementById("boot-sequence");
@@ -102,7 +99,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   }
-
+  const shala = "696742";
+  const ahlan = "148842";
   function typeText(element, text) {
     return new Promise((resolve) => {
       // Append a new text node to type into, so we don't overwrite siblings
@@ -134,9 +132,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function validatePasscode(code) {
-    if (code === ADMIN_PASSCODE) {
+    if (code === ahlan) {
       loginUser("admin");
-    } else if (code === GUEST_PASSCODE) {
+    } else if (code === shala) {
       loginUser("guest");
     } else {
       messageArea.innerHTML =
