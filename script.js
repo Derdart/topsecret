@@ -219,6 +219,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <span class="window-close-btn">[X]</span>
                 </div>
                 <div class="window-body">
+                    <div class="lightbox-watermark">CLASSIFIED</div>
                     <img id="lightbox-img" src="">
                     <div id="lightbox-caption"></div>
                 </div>
