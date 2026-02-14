@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const passcodeInput = document.getElementById("passcode-input");
   const messageArea = document.getElementById("message-area");
   const ADMIN_PASSCODE = "148842";
-  const GUEST_PASSCODE = "guest";
+  const GUEST_PASSCODE = "696742";
 
   // --- Authentication Logic ---
   if (passcodeInput) {
