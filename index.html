@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REDACTED</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="terminal-container">
+      <!-- HUD Corners -->
+      <div class="hud-corner hud-top-left"></div>
+      <div class="hud-corner hud-top-right"></div>
+      <div class="hud-corner hud-bottom-left"></div>
+      <div class="hud-corner hud-bottom-right"></div>
+
+      <div class="warning-banner">⚠ AUTHORIZED ACCESS ONLY ⚠</div>
+
+      <h1>FABIO FILES ACCESS CONTROL SYSTEM v6.9</h1>
+
+      <div id="boot-sequence">
+        <p>> INITIALIZING SYSTEM...</p>
+        <p>> CHECKING MEMORY... OK</p>
+        <p>> LOADING INTERFACE... OK</p>
+        <p>> SECURE CONNECTION ESTABLISHED.</p>
+        <p>
+          > CLASSIFICATION LEVEL:
+          <span class="redacted" title="Hover to reveal">ULTRA HIGH</span>
+        </p>
+      </div>
+
+      <div class="input-line">
+        <span class="prompt">ENTER PASSCODE:</span>
+        <input
+          type="password"
+          id="passcode-input"
+          maxlength="6"
+          autofocus
+          autocomplete="off"
+        />
+      </div>
+
+      <div id="message-area"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

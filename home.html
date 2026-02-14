@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROOT DIRECTORY</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="terminal-container">
+      <div class="warning-banner">⚠ AUTHORIZED ACCESS ONLY ⚠</div>
+
+      <div class="hud-corner hud-top-left"></div>
+      <div class="hud-corner hud-top-right"></div>
+      <div class="hud-corner hud-bottom-left"></div>
+      <div class="hud-corner hud-bottom-right"></div>
+
+      <h1>ROOT DIRECTORY</h1>
+      <div id="file-list">
+        <p>> LISTING FILES...</p>
+        <br />
+        <ul>
+          <li><a href="drawings.html">[DIR] DRAWINGS/</a></li>
+          <li><a href="texts.html">[DIR] TEXTS/</a></li>
+          <li><a href="documents.html">[DIR] DOCUMENTS/</a></li>
+          <li>
+            <span
+              class="redacted restricted-link"
+              data-href="fabio.html"
+              data-text="[EXE] FABIO.EXE"
+              >[EXE] FABIO.EXE</span
+            >
+            <span style="font-size: 0.8em; color: gray">(ACCESS DENIED)</span>
+          </li>
+          <li>
+            <span
+              class="redacted restricted-link"
+              data-href="source_code.html"
+              data-text="[DIR] FABIO_SOURCE_CODE/"
+              >[DIR] FABIO_SOURCE_CODE/</span
+            >
+            <span style="font-size: 0.8em; color: gray">(ACCESS DENIED)</span>
+          </li>
+          <br />
+          <li>
+            <a href="index.html" onclick="sessionStorage.clear()"
+              >[CMD] LOGOUT</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="footer-status">
+        <p>USER: UNKNOWN | SESSION: ACTIVE</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
