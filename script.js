@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
       loginUser("guest");
     } else {
       messageArea.innerHTML =
-        '<p class="error-msg">> ACCESS DENIED. INVALID PASSCODE.</p>';
+        '<p class="error-msg">> ACCESS DENIED. INVALID PASSCODE. YOUR DATA HAS BEEN SENT TO SPECIAL FORCES.</p>';
       passcodeInput.value = "";
     }
   }
