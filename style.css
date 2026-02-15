@@ -225,6 +225,38 @@ h3 {
   margin-top: 1rem;
 }
 
+.glitch-text {
+  animation: error-blink 0.2s;
+}
+
+@keyframes error-blink {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+    color: var(--error-color);
+  }
+  25% {
+    opacity: 0.8;
+    transform: translate(-2px, 2px);
+    color: #fff;
+  }
+  50% {
+    opacity: 1;
+    transform: translate(2px, -2px);
+    color: var(--error-color);
+  }
+  75% {
+    opacity: 0.8;
+    transform: translate(-2px, -2px);
+    color: #fff;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+    color: var(--error-color);
+  }
+}
+
 /* Navigation Links */
 a {
   color: var(--text-color);

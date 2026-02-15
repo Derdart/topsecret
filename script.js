@@ -99,6 +99,18 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   }
+  // Fetch user IP
+  let userIP = "UNKNOWN";
+  fetch("https://api.ipify.org?format=json")
+    .then((response) => response.json())
+    .then((data) => {
+      userIP = data.ip;
+    })
+    .catch((error) => {
+      console.error("Error fetching IP:", error);
+      userIP = "TRACING...";
+    });
+
   const shala = "696742";
   const ahlan = "148842";
   function typeText(element, text) {
@@ -137,8 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (code === shala) {
       loginUser("guest");
     } else {
-      messageArea.innerHTML =
-        '<p class="error-msg">> ACCESS DENIED. INVALID PASSCODE. YOUR DATA HAS BEEN SENT TO SPECIAL FORCES.</p>';
+      messageArea.innerHTML = `<p class="error-msg glitch-text">> ACCESS DENIED. YOUR DATA HAS BEEN SENT TO SPECIAL FORCES. YOUR IP: ${userIP}.</p>`;
       passcodeInput.value = "";
     }
   }
